@@ -24,8 +24,10 @@
                 @if ( $train->departure_time ) 
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Stazione: {{ $train->departure_station }} Partenza: {{ $train->departure_time }}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Arrivo: {{ $train->arrival_station }} Orario: {{ $train->arrival_time }}</h6>
+                        <h5 class="card-title">Stazione: {{ $train->departure_station }}</h5>
+                        <h5 class="card-title">Partenza: {{ $train->departure_time }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Stazione di Arrivo: {{ $train->arrival_station }}</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Arrivo Previsto: {{ $train->arrival_time }}</h6>
                         <p class="card-text">Compagnia: {{ $train->company }}</p>
                         <p class="card-text">Stato: {{ $train->in_time }}</p>
                         <p class="card-text">Cancellato: {{ $train->cancelled }}</p>
