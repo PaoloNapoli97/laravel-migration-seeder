@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Trains</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,7 +21,6 @@
         <div class="container">
             <div class="row">
                 @foreach ($trains as $train)
-                @if ( $train->departure_time ) 
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">Stazione: {{ $train->departure_station }}</h5>
@@ -34,7 +33,6 @@
                         <p class="card-text"></p>
                     </div>
                 </div>
-                @endif
                 @endforeach
             </div>
 
